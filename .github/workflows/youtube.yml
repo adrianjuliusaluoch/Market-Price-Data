@@ -30,4 +30,4 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       run: |
-        jupyter nbconvert --to notebook --execute youtube_trends.ipynb --output executed_youtube_trends.ipynb
+        jupyter nbconvert --to notebook --execute youtube.ipynb --output executed_youtube.ipynb
