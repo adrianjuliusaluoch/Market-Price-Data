@@ -1,4 +1,4 @@
-name: Key Commodities Price Changes
+name: Market Price Newsletter
 
 on:
   schedule:
