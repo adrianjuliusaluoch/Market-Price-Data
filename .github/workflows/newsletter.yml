@@ -30,4 +30,4 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: |
-        jupyter nbconvert --to notebook --execute food_basket.ipynb --output executed_food_basket.ipynb
+        jupyter nbconvert --to notebook --execute newsletter.ipynb --output executed_newsletter.ipynb
