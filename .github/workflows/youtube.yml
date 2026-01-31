@@ -1,4 +1,4 @@
-name: Export Youtube Trends to BigQuery
+name: Upload Youtube Trending Now Videos to Google BigQuery
 
 on:
   schedule:
