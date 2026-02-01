@@ -104,7 +104,7 @@ bigdata['retail'] = pd.to_numeric(bigdata['retail'].str.extract(r'(\d+\.?\d*)')[
 # Define Table ID
 table_id = f"data-storage-485106.food.market_prices_{table_suffix}"
 
-if now.day == 1:
+if now.day == 1 and now.hour == 0:
     try:
         prev_month_date = now.replace(day=1) - timedelta(days=1)
         prev_table_suffix = f"{prev_month_date.year}_{prev_month_date.strftime('%b').lower()}"
@@ -209,6 +209,7 @@ while job.state != 'DONE':
 
 # Return Data Info
 print(f"Food Basket data of shape {data.shape} has been successfully retrieved, saved, and appended to the BigQuery table.")
+
 
 
 
